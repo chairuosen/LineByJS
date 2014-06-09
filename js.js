@@ -336,15 +336,9 @@ $(function(){
             tools.init();
         };
         window.onerror = function(){
-            game.stop();
+//            game.stop();
             UI.toast('js错误');
-        }
-        window.onkeydown = function(event){
-            var e = window.event||event;
-            if(e.keyCode==27){
-                game.stop();
-            }
-        }
+        };
     }
     init();
 });
